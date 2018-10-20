@@ -1,0 +1,12 @@
+.centro{
+    position: absolute;
+    bottom:50%;
+    left: 25%;
+}
+.bg{
+    background-color: darkslategrey;
+    color: whitesmoke;
+}
+.letra{
+    font-size:4vw;
+}
