@@ -12,6 +12,7 @@
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
 <title>Document</title>
 </head>
 <style>
@@ -25,20 +26,44 @@ html, body {
   position:relative;
 }
 .content{
-  padding:10px;
-  padding-bottom:45px;   /* Height+padding(top and botton) of the footer */
   text-align:justify; 
 }
-
 .content {
-  height:100%; // IE HACK
+  height:100%;
+}
+.center p{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.typed-cursor {
+  color: #1b1b1b;
 }
 </style>
+
 <body>
+    <div class="page center" style="background-color:#1b1b1b; color: aliceblue;"> 
+        <div class="content">
+            <p id=ola style="font-size:3vw;"></p>
+        </div>
+    </div>​
     <div class="page"> 
         <div class="content">
             Some Content Here...
         </div>
     </div>​
+    <div class="page"> 
+        <div class="content" >
+            Some Content Here...
+        </div>
+    </div>​
 </body>
+
+<script>typed = new Typed('#ola', {
+    strings: ["","Olá.", "O meu nome é Miguel.","Bem-Vindos ao meu Site."],
+    typeSpeed: 40
+  });</script>
 </html>
