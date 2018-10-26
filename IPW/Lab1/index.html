@@ -1,36 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<title>Document</title>
 </head>
 <style>
-#logo {
-    text-align: left;
+html, body {
+  margin:0;
+  padding:0;
+  height:100%;
+}
+.page {
+  min-height:100%;
+  position:relative;
+}
+.content{
+  padding:10px;
+  padding-bottom:45px;   /* Height+padding(top and botton) of the footer */
+  text-align:justify; 
+}
+
+.content {
+  height:100%; // IE HACK
 }
 </style>
-
 <body>
-  <table border="1" style="width:100%">
-    <tr>
-      <th width="85%" id=logo><img src="img/images.png" height="40"></th>
-      <th width="5%"><i class="fas fa-users-cog" style="font-size: 30px"></i></th>
-      <th width="5%" ><i class="far fa-question-circle " style="font-size: 30px"></i></th>
-      <th width="5%"><i class="fas fa-shopping-cart" style="font-size: 30px"></i></th>
-    </tr>
-    <tr>
-      <td>January</td>
-      <td>$100</td>
-    </tr>
-    <tr>
-      <td>February</td>
-      <td>$80</td>
-    </tr>
-  </table>
-  
-  </body>
-  </html>
-      
+    <div class="page"> 
+        <div class="content">
+            Some Content Here...
+        </div>
+    </div>​
+</body>
+</html>
