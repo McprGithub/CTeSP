@@ -1,4 +1,4 @@
-ul {
+ul#ulV {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -8,13 +8,13 @@ ul {
     position: fixed; /* Make it stick, even on scroll */
     overflow: auto; /* Enable scrolling if the sidenav has too much content */
 }
-li a {
+li#liV a#liaV {
     display: block;
     color: #000;
     padding: 8px 16px;
     text-decoration: none;
 }
-li a:hover {
+ul#ulV li#liV a#liaV:hover {
     background-color: #e7e7e7;
     color: #000;
     text-decoration: none;
@@ -35,8 +35,13 @@ ul#ulH li#liH {
 }
 ul#ulH li#liH a#liaH {
     display: block;
-    color: white;
+    color: black;
     text-align: center;
     padding: 14px 16px;
+    text-decoration: none;
+}
+ul#ulH li#liH a#liaH:hover{
+    background-color: #e7e7e7;
+    color: #000;
     text-decoration: none;
 }
